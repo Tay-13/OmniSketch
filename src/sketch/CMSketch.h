@@ -93,7 +93,7 @@ CMSketch<key_len, T, hash_t>::~CMSketch() {
   delete[] counter;
 }
 
-template <int32_t key_len, typename T, typename hash_t>
+template <int32_t key_len, typename T, typename hash_t> 
 void CMSketch<key_len, T, hash_t>::update(const FlowKey<key_len> &flowkey,
                                           T val) {
   for (int32_t i = 0; i < depth; ++i) {
